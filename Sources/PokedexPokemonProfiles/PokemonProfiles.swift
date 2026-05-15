@@ -4,10 +4,7 @@ import PokedexSpecies
 public enum PokemonProfiles {
     public static let all: [PokemonProfile] = gen01 + gen03
 
-    public static let gen01: [PokemonProfile] = [
-        vulpix,
-        alolaVulpix,
-    ]
+    public static let gen01: [PokemonProfile] = Gen01PokemonProfiles.all
 
     public static let gen03: [PokemonProfile] = [
         deoxys,

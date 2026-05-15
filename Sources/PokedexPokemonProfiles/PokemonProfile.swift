@@ -42,8 +42,6 @@ public struct PokemonProfile: Hashable, Codable, Sendable {
 }
 
 public extension PokemonProfile {
-    static let vulpix = PokemonProfiles.vulpix
-    static let alolaVulpix = PokemonProfiles.alolaVulpix
     static let deoxys = PokemonProfiles.deoxys
     static let deoxysAttack = PokemonProfiles.deoxysAttack
     static let deoxysDefense = PokemonProfiles.deoxysDefense
