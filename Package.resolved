@@ -1,0 +1,33 @@
+{
+  "originHash" : "e99bbfb96017acacafcddd8cb8b6994f2422527bfc7de201587237136e36cd67",
+  "pins" : [
+    {
+      "identity" : "swift-pokedex-abilities",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elmetal/swift-pokedex-abilities",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ddc04befe71a6ba498a2ca7df547a459c5e00fff"
+      }
+    },
+    {
+      "identity" : "swift-pokedex-species",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elmetal/swift-pokedex-species",
+      "state" : {
+        "branch" : "main",
+        "revision" : "3f70b7dcee726c502fd372858a481a227ae9b4ba"
+      }
+    },
+    {
+      "identity" : "swift-pokemon-types",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/elmetal/swift-pokemon-types",
+      "state" : {
+        "branch" : "main",
+        "revision" : "932b1411d7bd256e01f3f1508330502db4fec0d3"
+      }
+    }
+  ],
+  "version" : 3
+}
