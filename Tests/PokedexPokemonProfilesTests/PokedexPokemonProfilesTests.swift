@@ -20,6 +20,16 @@ import Testing
     #expect(PokemonProfiles.paldeaBlazeBreedTauros.types.secondary == .fire)
 }
 
+@Test func gen02IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen02.count == 143)
+    #expect(PokemonProfiles.pichu.stats.speed == 60)
+    #expect(PokemonProfiles.spikyEaredPichu.form == .spikyEared)
+    #expect(PokemonProfiles.questionUnown.form == .question)
+    #expect(PokemonProfiles.paldeaWooper.types.primary == .poison)
+    #expect(PokemonProfiles.hisuiTyphlosion.types.secondary == .ghost)
+    #expect(PokemonProfiles.megaAmpharos.types.secondary == .dragon)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 

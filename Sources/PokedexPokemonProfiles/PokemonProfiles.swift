@@ -2,9 +2,11 @@ import PokedexSpecies
 
 /// A namespace for standard Pokemon profile data.
 public enum PokemonProfiles {
-    public static let all: [PokemonProfile] = gen01 + gen03
+    public static let all: [PokemonProfile] = gen01 + gen02 + gen03
 
     public static let gen01: [PokemonProfile] = Gen01PokemonProfiles.all
+
+    public static let gen02: [PokemonProfile] = Gen02PokemonProfiles.all
 
     public static let gen03: [PokemonProfile] = [
         deoxys,
