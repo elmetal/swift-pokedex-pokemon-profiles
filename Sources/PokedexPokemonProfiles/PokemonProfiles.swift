@@ -2,7 +2,7 @@ import PokedexSpecies
 
 /// A namespace for standard Pokemon profile data.
 public enum PokemonProfiles {
-    public static let all: [PokemonProfile] = gen01 + gen02 + gen03 + gen04 + gen05 + gen06 + gen07 + gen08
+    public static let all: [PokemonProfile] = gen01 + gen02 + gen03 + gen04 + gen05 + gen06 + gen07 + gen08 + gen09
 
     public static let gen01: [PokemonProfile] = Gen01PokemonProfiles.all
 
@@ -19,6 +19,8 @@ public enum PokemonProfiles {
     public static let gen07: [PokemonProfile] = Gen07PokemonProfiles.all
 
     public static let gen08: [PokemonProfile] = Gen08PokemonProfiles.all
+
+    public static let gen09: [PokemonProfile] = Gen09PokemonProfiles.all
 
     public static func profile(for key: PokemonProfileKey) -> PokemonProfile? {
         all.first { $0.key == key }

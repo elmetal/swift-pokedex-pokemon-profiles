@@ -92,6 +92,17 @@ import Testing
     #expect(PokemonProfiles.rubyCreamStrawberrySweetAlcremie.form == .rubyCreamStrawberrySweet)
 }
 
+@Test func gen09IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen09.count == 147)
+    #expect(PokemonProfiles.heroPalafin.stats.attack == 160)
+    #expect(PokemonProfiles.familyOfThreeMaushold.form == .familyOfThree)
+    #expect(PokemonProfiles.threeSegmentDudunsparce.form == .threeSegment)
+    #expect(PokemonProfiles.bluePlumageSquawkabilly.form == .bluePlumage)
+    #expect(PokemonProfiles.wellspringMaskOgerpon.types.secondary == .water)
+    #expect(PokemonProfiles.hearthflameMaskOgerpon.types.secondary == .fire)
+    #expect(PokemonProfiles.stellarTerapagos.stats.hp == 160)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 
