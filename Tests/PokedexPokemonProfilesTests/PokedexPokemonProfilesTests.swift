@@ -70,6 +70,17 @@ import Testing
     #expect(PokemonProfiles.megaDiancie.stats.total == 700)
 }
 
+@Test func gen07IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen07.count == 144)
+    #expect(PokemonProfiles.schoolWishiwashi.stats.total == 620)
+    #expect(PokemonProfiles.duskLycanroc.form == .dusk)
+    #expect(PokemonProfiles.hisuiDecidueye.types.secondary == .fighting)
+    #expect(PokemonProfiles.dawnNecrozma.types.secondary == .ghost)
+    #expect(PokemonProfiles.ultraNecrozma.stats.total == 754)
+    #expect(PokemonProfiles.originalMagearna.form == .original)
+    #expect(PokemonProfiles.gmaxMelmetal.form == .gmax)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 
