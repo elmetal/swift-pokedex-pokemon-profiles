@@ -59,6 +59,17 @@ import Testing
     #expect(PokemonProfiles.pirouetteMeloetta.types.secondary == .fighting)
 }
 
+@Test func gen06IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen06.count == 178)
+    #expect(PokemonProfiles.ashGreninja.abilities.first == .battleBond)
+    #expect(PokemonProfiles.bladeAegislash.stats.attack == 140)
+    #expect(PokemonProfiles.heartFurfrou.form == .heart)
+    #expect(PokemonProfiles.superGourgeist.form == .superSize)
+    #expect(PokemonProfiles.tenPercentZygarde.form == .form10)
+    #expect(PokemonProfiles.unboundHoopa.types.secondary == .dark)
+    #expect(PokemonProfiles.megaDiancie.stats.total == 700)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 
