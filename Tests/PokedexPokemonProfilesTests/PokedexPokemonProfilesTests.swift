@@ -48,6 +48,17 @@ import Testing
     #expect(PokemonProfiles.megaLucario.stats.total == 625)
 }
 
+@Test func gen05IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen05.count == 194)
+    #expect(PokemonProfiles.blueStripedBasculin.form == .blueStriped)
+    #expect(PokemonProfiles.zenDarmanitan.types.secondary == .psychic)
+    #expect(PokemonProfiles.galarZenDarmanitan.types.secondary == .fire)
+    #expect(PokemonProfiles.summerDeerling.form == .summer)
+    #expect(PokemonProfiles.therianTornadus.abilities.first == .regenerator)
+    #expect(PokemonProfiles.whiteKyurem.stats.total == 700)
+    #expect(PokemonProfiles.pirouetteMeloetta.types.secondary == .fighting)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 
