@@ -40,10 +40,3 @@ public struct PokemonProfile: Hashable, Codable, Sendable {
         self.weight = weight
     }
 }
-
-public extension PokemonProfile {
-    static let deoxys = PokemonProfiles.deoxys
-    static let deoxysAttack = PokemonProfiles.deoxysAttack
-    static let deoxysDefense = PokemonProfiles.deoxysDefense
-    static let deoxysSpeed = PokemonProfiles.deoxysSpeed
-}

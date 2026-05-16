@@ -8,12 +8,7 @@ public enum PokemonProfiles {
 
     public static let gen02: [PokemonProfile] = Gen02PokemonProfiles.all
 
-    public static let gen03: [PokemonProfile] = [
-        deoxys,
-        deoxysAttack,
-        deoxysDefense,
-        deoxysSpeed,
-    ]
+    public static let gen03: [PokemonProfile] = Gen03PokemonProfiles.all
 
     public static func profile(for key: PokemonProfileKey) -> PokemonProfile? {
         all.first { $0.key == key }

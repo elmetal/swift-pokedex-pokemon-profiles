@@ -8,8 +8,8 @@ import Testing
     #expect(PokemonProfiles.vulpix.stats.speed == 65)
     #expect(PokemonProfiles.alolaVulpix.stats.speed == 65)
     #expect(PokemonProfiles.megaXCharizard.stats.attack == 130)
-    #expect(PokemonProfiles.deoxysAttack.stats.attack == 180)
-    #expect(PokemonProfile.deoxysSpeed.stats.speed == 180)
+    #expect(PokemonProfiles.attackDeoxys.stats.attack == 180)
+    #expect(PokemonProfile.speedDeoxys.stats.speed == 180)
 }
 
 @Test func gen01IncludesSpeciesForms() {
@@ -28,6 +28,15 @@ import Testing
     #expect(PokemonProfiles.paldeaWooper.types.primary == .poison)
     #expect(PokemonProfiles.hisuiTyphlosion.types.secondary == .ghost)
     #expect(PokemonProfiles.megaAmpharos.types.secondary == .dragon)
+}
+
+@Test func gen03IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen03.count == 166)
+    #expect(PokemonProfiles.sunnyCastform.form == .sunny)
+    #expect(PokemonProfiles.sunnyCastform.types.primary == .fire)
+    #expect(PokemonProfiles.primalGroudon.abilities.first == .desolateLand)
+    #expect(PokemonProfiles.megaRayquaza.stats.total == 780)
+    #expect(PokemonProfiles.speedDeoxys.stats.speed == 180)
 }
 
 @Test func formSpecificProfilesCanShareSpecies() {
