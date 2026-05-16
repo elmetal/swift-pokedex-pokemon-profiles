@@ -39,6 +39,15 @@ import Testing
     #expect(PokemonProfiles.speedDeoxys.stats.speed == 180)
 }
 
+@Test func gen04IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen04.count == 149)
+    #expect(PokemonProfiles.washRotom.types.secondary == .water)
+    #expect(PokemonProfiles.originGiratina.form == .origin)
+    #expect(PokemonProfiles.skyShaymin.types.secondary == .flying)
+    #expect(PokemonProfiles.fireArceus.form == .fire)
+    #expect(PokemonProfiles.megaLucario.stats.total == 625)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 
