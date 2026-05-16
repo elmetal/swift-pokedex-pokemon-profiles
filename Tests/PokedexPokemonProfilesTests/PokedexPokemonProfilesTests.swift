@@ -81,6 +81,17 @@ import Testing
     #expect(PokemonProfiles.gmaxMelmetal.form == .gmax)
 }
 
+@Test func gen08IncludesSpeciesForms() {
+    #expect(PokemonProfiles.gen08.count == 196)
+    #expect(PokemonProfiles.crownedZacian.types.secondary == .steel)
+    #expect(PokemonProfiles.rapidStrikeUrshifu.types.secondary == .water)
+    #expect(PokemonProfiles.singleStrikeGmaxUrshifu.form == .singleStrikeGmax)
+    #expect(PokemonProfiles.iceCalyrex.abilities.first == .asOne)
+    #expect(PokemonProfiles.shadowCalyrex.stats.specialAttack == 165)
+    #expect(PokemonProfiles.bloodmoonUrsaluna.form == .bloodmoon)
+    #expect(PokemonProfiles.rubyCreamStrawberrySweetAlcremie.form == .rubyCreamStrawberrySweet)
+}
+
 @Test func formSpecificProfilesCanShareSpecies() {
     let profiles = PokemonProfiles.profiles(for: .vulpix)
 
