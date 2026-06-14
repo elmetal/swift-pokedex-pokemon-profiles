@@ -23,7 +23,7 @@ enum CalyrexProfiles {
     )
 
     static let iceCalyrex = PokemonProfile(
-        key: .init(species: .calyrex, form: .init(rawValue: "ice")),
+        key: .init(species: .calyrex, form: .init(rawValue: "ice-rider")),
         isDefaultForm: false,
         types: .init(primary: .psychic, secondary: .ice),
         baseStats: .init(
@@ -42,7 +42,7 @@ enum CalyrexProfiles {
     )
 
     static let shadowCalyrex = PokemonProfile(
-        key: .init(species: .calyrex, form: .init(rawValue: "shadow")),
+        key: .init(species: .calyrex, form: .init(rawValue: "shadow-rider")),
         isDefaultForm: false,
         types: .init(primary: .psychic, secondary: .ghost),
         baseStats: .init(

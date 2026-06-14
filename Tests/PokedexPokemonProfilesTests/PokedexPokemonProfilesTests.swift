@@ -1,3 +1,4 @@
+import Foundation
 import PokedexSpecies
 import PokemonTypes
 import Testing
@@ -44,7 +45,7 @@ import Testing
     #expect(PokemonProfiles.washRotom.types.secondary == .water)
     #expect(PokemonProfiles.originGiratina.form == .origin)
     #expect(PokemonProfiles.skyShaymin.types.secondary == .flying)
-    #expect(PokemonProfiles.fireArceus.form == .fire)
+    #expect(PokemonProfiles.fireArceus.form == .firePlate)
     #expect(PokemonProfiles.megaLucario.stats.total == 625)
 }
 
@@ -86,6 +87,7 @@ import Testing
     #expect(PokemonProfiles.crownedZacian.types.secondary == .steel)
     #expect(PokemonProfiles.rapidStrikeUrshifu.types.secondary == .water)
     #expect(PokemonProfiles.singleStrikeGmaxUrshifu.form == .singleStrikeGmax)
+    #expect(PokemonProfiles.iceCalyrex.form == .iceRider)
     #expect(PokemonProfiles.iceCalyrex.abilities.first == .asOne)
     #expect(PokemonProfiles.shadowCalyrex.stats.specialAttack == 165)
     #expect(PokemonProfiles.bloodmoonUrsaluna.form == .bloodmoon)
@@ -132,4 +134,33 @@ import Testing
 
     #expect(defaultVulpix == .vulpix)
     #expect(defaultVulpix?.isDefaultForm == true)
+}
+
+@Test func formIdentifiersSeparateDifferentFormConcepts() {
+    #expect(PokemonProfiles.iceCalyrex.form == .iceRider)
+    #expect(PokemonProfiles.iceSilvally.form == .iceMemory)
+    #expect(PokemonProfiles.iceArceus.form == .icePlate)
+}
+
+@Test func pokemonFormFormatStyleLocalizesNames() {
+    let english = Locale(identifier: "en")
+    let japanese = Locale(identifier: "ja")
+
+    #expect(PokemonForm.default.formatted(.pokemonForm(locale: english)) == "Default")
+    #expect(PokemonForm.default.formatted(.pokemonForm(locale: japanese)) == "通常のすがた")
+    #expect(PokemonForm.alola.formatted(.pokemonForm(locale: english)) == "Alolan Form")
+    #expect(PokemonForm.alola.formatted(.pokemonForm(locale: japanese)) == "アローラのすがた")
+    #expect(PokemonForm.iceRider.formatted(.pokemonForm(locale: english)) == "Ice Rider")
+    #expect(PokemonForm.iceRider.formatted(.pokemonForm(locale: japanese)) == "はくばじょうのすがた")
+    #expect(PokemonForm.iceMemory.formatted(.pokemonForm(locale: english)) == "Ice Memory")
+    #expect(PokemonForm.icePlate.formatted(.pokemonForm(locale: japanese)) == "つららのプレート")
+}
+
+@Test func pokemonFormFormatStyleFallsBackForUnknownNames() {
+    let english = Locale(identifier: "en")
+    let japanese = Locale(identifier: "ja")
+    let unknownForm = PokemonForm(rawValue: "unknown-form")
+
+    #expect(unknownForm.formatted(.pokemonForm(locale: english)) == "Unknown Form")
+    #expect(unknownForm.formatted(.pokemonForm(locale: japanese)) == "unknown-form")
 }

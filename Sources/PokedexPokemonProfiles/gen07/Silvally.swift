@@ -23,7 +23,7 @@ enum SilvallyProfiles {
     )
 
     static let fightingSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "fighting")),
+        key: .init(species: .silvally, form: .init(rawValue: "fighting-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -42,7 +42,7 @@ enum SilvallyProfiles {
     )
 
     static let flyingSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "flying")),
+        key: .init(species: .silvally, form: .init(rawValue: "flying-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -61,7 +61,7 @@ enum SilvallyProfiles {
     )
 
     static let poisonSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "poison")),
+        key: .init(species: .silvally, form: .init(rawValue: "poison-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -80,7 +80,7 @@ enum SilvallyProfiles {
     )
 
     static let groundSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "ground")),
+        key: .init(species: .silvally, form: .init(rawValue: "ground-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -99,7 +99,7 @@ enum SilvallyProfiles {
     )
 
     static let rockSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "rock")),
+        key: .init(species: .silvally, form: .init(rawValue: "rock-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -118,7 +118,7 @@ enum SilvallyProfiles {
     )
 
     static let bugSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "bug")),
+        key: .init(species: .silvally, form: .init(rawValue: "bug-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -137,7 +137,7 @@ enum SilvallyProfiles {
     )
 
     static let ghostSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "ghost")),
+        key: .init(species: .silvally, form: .init(rawValue: "ghost-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -156,7 +156,7 @@ enum SilvallyProfiles {
     )
 
     static let steelSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "steel")),
+        key: .init(species: .silvally, form: .init(rawValue: "steel-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -175,7 +175,7 @@ enum SilvallyProfiles {
     )
 
     static let fireSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "fire")),
+        key: .init(species: .silvally, form: .init(rawValue: "fire-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -194,7 +194,7 @@ enum SilvallyProfiles {
     )
 
     static let waterSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "water")),
+        key: .init(species: .silvally, form: .init(rawValue: "water-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -213,7 +213,7 @@ enum SilvallyProfiles {
     )
 
     static let grassSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "grass")),
+        key: .init(species: .silvally, form: .init(rawValue: "grass-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -232,7 +232,7 @@ enum SilvallyProfiles {
     )
 
     static let electricSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "electric")),
+        key: .init(species: .silvally, form: .init(rawValue: "electric-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -251,7 +251,7 @@ enum SilvallyProfiles {
     )
 
     static let psychicSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "psychic")),
+        key: .init(species: .silvally, form: .init(rawValue: "psychic-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -270,7 +270,7 @@ enum SilvallyProfiles {
     )
 
     static let iceSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "ice")),
+        key: .init(species: .silvally, form: .init(rawValue: "ice-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -289,7 +289,7 @@ enum SilvallyProfiles {
     )
 
     static let dragonSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "dragon")),
+        key: .init(species: .silvally, form: .init(rawValue: "dragon-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -308,7 +308,7 @@ enum SilvallyProfiles {
     )
 
     static let darkSilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "dark")),
+        key: .init(species: .silvally, form: .init(rawValue: "dark-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -327,7 +327,7 @@ enum SilvallyProfiles {
     )
 
     static let fairySilvally = PokemonProfile(
-        key: .init(species: .silvally, form: .init(rawValue: "fairy")),
+        key: .init(species: .silvally, form: .init(rawValue: "fairy-memory")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(

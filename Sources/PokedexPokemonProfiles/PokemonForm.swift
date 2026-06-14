@@ -1,7 +1,10 @@
-/// A Pokemon form identifier scoped by species.
+import Foundation
+
+/// A Pokemon form identifier.
 ///
-/// Forms are unique together with a species, so the same form value can be
-/// reused across species when the meaning is shared, such as regional forms.
+/// A profile key's species and form identify one concrete Pokemon appearance.
+/// A form value itself should be reused only when the form concept is shared,
+/// such as regional forms.
 public struct PokemonForm: Hashable, Codable, Sendable, RawRepresentable {
     public let rawValue: String
 
@@ -11,7 +14,84 @@ public struct PokemonForm: Hashable, Codable, Sendable, RawRepresentable {
 }
 
 public extension PokemonForm {
+    struct FormatStyle: Foundation.FormatStyle, Sendable {
+        public typealias FormatInput = PokemonForm
+        public typealias FormatOutput = String
+
+        public var locale: Locale
+
+        public init(locale: Locale = .autoupdatingCurrent) {
+            self.locale = locale
+        }
+
+        public static func localized(locale: Locale = .autoupdatingCurrent) -> Self {
+            .init(locale: locale)
+        }
+
+        public func format(_ value: PokemonForm) -> String {
+            let names = localizedPokemonFormNames[value.rawValue]
+            let fallback = value.rawValue.localizedPokemonFormFallback
+
+            if locale.usesJapanesePokemonFormNames {
+                return names?.ja ?? fallback.ja
+            }
+
+            return names?.en ?? fallback.en
+        }
+    }
+
+    func formatted(_ style: FormatStyle = .localized()) -> String {
+        style.format(self)
+    }
+}
+
+public extension Foundation.FormatStyle where Self == PokemonForm.FormatStyle {
+    static func pokemonForm(locale: Locale = .autoupdatingCurrent) -> PokemonForm.FormatStyle {
+        .init(locale: locale)
+    }
+}
+
+public extension PokemonForm {
     static let `default` = PokemonForm(rawValue: "default")
+}
+
+public extension PokemonForm {
+    static let bugMemory = PokemonForm(rawValue: "bug-memory")
+    static let bugPlate = PokemonForm(rawValue: "bug-plate")
+    static let darkMemory = PokemonForm(rawValue: "dark-memory")
+    static let darkPlate = PokemonForm(rawValue: "dark-plate")
+    static let dragonMemory = PokemonForm(rawValue: "dragon-memory")
+    static let dragonPlate = PokemonForm(rawValue: "dragon-plate")
+    static let electricMemory = PokemonForm(rawValue: "electric-memory")
+    static let electricPlate = PokemonForm(rawValue: "electric-plate")
+    static let fairyMemory = PokemonForm(rawValue: "fairy-memory")
+    static let fairyPlate = PokemonForm(rawValue: "fairy-plate")
+    static let fightingMemory = PokemonForm(rawValue: "fighting-memory")
+    static let fightingPlate = PokemonForm(rawValue: "fighting-plate")
+    static let fireMemory = PokemonForm(rawValue: "fire-memory")
+    static let firePlate = PokemonForm(rawValue: "fire-plate")
+    static let flyingMemory = PokemonForm(rawValue: "flying-memory")
+    static let flyingPlate = PokemonForm(rawValue: "flying-plate")
+    static let ghostMemory = PokemonForm(rawValue: "ghost-memory")
+    static let ghostPlate = PokemonForm(rawValue: "ghost-plate")
+    static let grassMemory = PokemonForm(rawValue: "grass-memory")
+    static let grassPlate = PokemonForm(rawValue: "grass-plate")
+    static let groundMemory = PokemonForm(rawValue: "ground-memory")
+    static let groundPlate = PokemonForm(rawValue: "ground-plate")
+    static let iceMemory = PokemonForm(rawValue: "ice-memory")
+    static let icePlate = PokemonForm(rawValue: "ice-plate")
+    static let iceRider = PokemonForm(rawValue: "ice-rider")
+    static let poisonMemory = PokemonForm(rawValue: "poison-memory")
+    static let poisonPlate = PokemonForm(rawValue: "poison-plate")
+    static let psychicMemory = PokemonForm(rawValue: "psychic-memory")
+    static let psychicPlate = PokemonForm(rawValue: "psychic-plate")
+    static let rockMemory = PokemonForm(rawValue: "rock-memory")
+    static let rockPlate = PokemonForm(rawValue: "rock-plate")
+    static let shadowRider = PokemonForm(rawValue: "shadow-rider")
+    static let steelMemory = PokemonForm(rawValue: "steel-memory")
+    static let steelPlate = PokemonForm(rawValue: "steel-plate")
+    static let waterMemory = PokemonForm(rawValue: "water-memory")
+    static let waterPlate = PokemonForm(rawValue: "water-plate")
 }
 
 public extension PokemonForm {
@@ -291,4 +371,84 @@ public extension PokemonForm {
     static let yellowPlumage = PokemonForm(rawValue: "yellow-plumage")
     static let z = PokemonForm(rawValue: "z")
     static let zen = PokemonForm(rawValue: "zen")
+}
+
+private struct LocalizedPokemonFormName: Sendable {
+    let en: String
+    let ja: String
+}
+
+private let localizedPokemonFormNames: [String: LocalizedPokemonFormName] = [
+    "default": .init(en: "Default", ja: "通常のすがた"),
+    "alola": .init(en: "Alolan Form", ja: "アローラのすがた"),
+    "galar": .init(en: "Galarian Form", ja: "ガラルのすがた"),
+    "hisui": .init(en: "Hisuian Form", ja: "ヒスイのすがた"),
+    "paldea": .init(en: "Paldean Form", ja: "パルデアのすがた"),
+    "mega": .init(en: "Mega", ja: "メガシンカ"),
+    "mega-x": .init(en: "Mega X", ja: "メガシンカX"),
+    "mega-y": .init(en: "Mega Y", ja: "メガシンカY"),
+    "gmax": .init(en: "Gigantamax", ja: "キョダイマックス"),
+    "primal": .init(en: "Primal", ja: "ゲンシカイキ"),
+    "origin": .init(en: "Origin Forme", ja: "オリジンフォルム"),
+    "ice-rider": .init(en: "Ice Rider", ja: "はくばじょうのすがた"),
+    "shadow-rider": .init(en: "Shadow Rider", ja: "こくばじょうのすがた"),
+    "bug-memory": .init(en: "Bug Memory", ja: "バグメモリ"),
+    "dark-memory": .init(en: "Dark Memory", ja: "ダークメモリ"),
+    "dragon-memory": .init(en: "Dragon Memory", ja: "ドラゴンメモリ"),
+    "electric-memory": .init(en: "Electric Memory", ja: "エレクトロメモリ"),
+    "fairy-memory": .init(en: "Fairy Memory", ja: "フェアリーメモリ"),
+    "fighting-memory": .init(en: "Fighting Memory", ja: "ファイトメモリ"),
+    "fire-memory": .init(en: "Fire Memory", ja: "ファイヤーメモリ"),
+    "flying-memory": .init(en: "Flying Memory", ja: "フライングメモリ"),
+    "ghost-memory": .init(en: "Ghost Memory", ja: "ゴーストメモリ"),
+    "grass-memory": .init(en: "Grass Memory", ja: "グラスメモリ"),
+    "ground-memory": .init(en: "Ground Memory", ja: "グラウンドメモリ"),
+    "ice-memory": .init(en: "Ice Memory", ja: "アイスメモリ"),
+    "poison-memory": .init(en: "Poison Memory", ja: "ポイズンメモリ"),
+    "psychic-memory": .init(en: "Psychic Memory", ja: "サイキックメモリ"),
+    "rock-memory": .init(en: "Rock Memory", ja: "ロックメモリ"),
+    "steel-memory": .init(en: "Steel Memory", ja: "スチールメモリ"),
+    "water-memory": .init(en: "Water Memory", ja: "ウォーターメモリ"),
+    "bug-plate": .init(en: "Bug Plate", ja: "たまむしプレート"),
+    "dark-plate": .init(en: "Dread Plate", ja: "こわもてプレート"),
+    "dragon-plate": .init(en: "Draco Plate", ja: "りゅうのプレート"),
+    "electric-plate": .init(en: "Zap Plate", ja: "いかずちプレート"),
+    "fairy-plate": .init(en: "Pixie Plate", ja: "せいれいプレート"),
+    "fighting-plate": .init(en: "Fist Plate", ja: "こぶしのプレート"),
+    "fire-plate": .init(en: "Flame Plate", ja: "ひのたまプレート"),
+    "flying-plate": .init(en: "Sky Plate", ja: "あおぞらプレート"),
+    "ghost-plate": .init(en: "Spooky Plate", ja: "もののけプレート"),
+    "grass-plate": .init(en: "Meadow Plate", ja: "みどりのプレート"),
+    "ground-plate": .init(en: "Earth Plate", ja: "だいちのプレート"),
+    "ice-plate": .init(en: "Icicle Plate", ja: "つららのプレート"),
+    "poison-plate": .init(en: "Toxic Plate", ja: "もうどくプレート"),
+    "psychic-plate": .init(en: "Mind Plate", ja: "ふしぎのプレート"),
+    "rock-plate": .init(en: "Stone Plate", ja: "がんせきプレート"),
+    "steel-plate": .init(en: "Iron Plate", ja: "こうてつプレート"),
+    "water-plate": .init(en: "Splash Plate", ja: "しずくプレート"),
+]
+
+private extension Locale {
+    var usesJapanesePokemonFormNames: Bool {
+        let normalizedIdentifier = identifier.replacingOccurrences(of: "-", with: "_").lowercased()
+        return normalizedIdentifier == "ja" || normalizedIdentifier.hasPrefix("ja_")
+    }
+}
+
+private extension String {
+    var localizedPokemonFormFallback: LocalizedPokemonFormName {
+        .init(en: pokemonFormTitleCased, ja: self)
+    }
+
+    var pokemonFormTitleCased: String {
+        split(separator: "-")
+            .map { word in
+                guard let first = word.first else {
+                    return ""
+                }
+
+                return String(first).uppercased() + word.dropFirst().lowercased()
+            }
+            .joined(separator: " ")
+    }
 }

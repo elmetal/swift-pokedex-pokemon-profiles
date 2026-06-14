@@ -23,7 +23,7 @@ enum ArceusProfiles {
     )
 
     static let fightingArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "fighting")),
+        key: .init(species: .arceus, form: .init(rawValue: "fighting-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -42,7 +42,7 @@ enum ArceusProfiles {
     )
 
     static let flyingArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "flying")),
+        key: .init(species: .arceus, form: .init(rawValue: "flying-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -61,7 +61,7 @@ enum ArceusProfiles {
     )
 
     static let poisonArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "poison")),
+        key: .init(species: .arceus, form: .init(rawValue: "poison-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -80,7 +80,7 @@ enum ArceusProfiles {
     )
 
     static let groundArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "ground")),
+        key: .init(species: .arceus, form: .init(rawValue: "ground-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -99,7 +99,7 @@ enum ArceusProfiles {
     )
 
     static let rockArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "rock")),
+        key: .init(species: .arceus, form: .init(rawValue: "rock-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -118,7 +118,7 @@ enum ArceusProfiles {
     )
 
     static let bugArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "bug")),
+        key: .init(species: .arceus, form: .init(rawValue: "bug-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -137,7 +137,7 @@ enum ArceusProfiles {
     )
 
     static let ghostArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "ghost")),
+        key: .init(species: .arceus, form: .init(rawValue: "ghost-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -156,7 +156,7 @@ enum ArceusProfiles {
     )
 
     static let steelArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "steel")),
+        key: .init(species: .arceus, form: .init(rawValue: "steel-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -175,7 +175,7 @@ enum ArceusProfiles {
     )
 
     static let fireArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "fire")),
+        key: .init(species: .arceus, form: .init(rawValue: "fire-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -194,7 +194,7 @@ enum ArceusProfiles {
     )
 
     static let waterArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "water")),
+        key: .init(species: .arceus, form: .init(rawValue: "water-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -213,7 +213,7 @@ enum ArceusProfiles {
     )
 
     static let grassArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "grass")),
+        key: .init(species: .arceus, form: .init(rawValue: "grass-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -232,7 +232,7 @@ enum ArceusProfiles {
     )
 
     static let electricArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "electric")),
+        key: .init(species: .arceus, form: .init(rawValue: "electric-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -251,7 +251,7 @@ enum ArceusProfiles {
     )
 
     static let psychicArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "psychic")),
+        key: .init(species: .arceus, form: .init(rawValue: "psychic-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -270,7 +270,7 @@ enum ArceusProfiles {
     )
 
     static let iceArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "ice")),
+        key: .init(species: .arceus, form: .init(rawValue: "ice-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -289,7 +289,7 @@ enum ArceusProfiles {
     )
 
     static let dragonArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "dragon")),
+        key: .init(species: .arceus, form: .init(rawValue: "dragon-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -308,7 +308,7 @@ enum ArceusProfiles {
     )
 
     static let darkArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "dark")),
+        key: .init(species: .arceus, form: .init(rawValue: "dark-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
@@ -327,7 +327,7 @@ enum ArceusProfiles {
     )
 
     static let fairyArceus = PokemonProfile(
-        key: .init(species: .arceus, form: .init(rawValue: "fairy")),
+        key: .init(species: .arceus, form: .init(rawValue: "fairy-plate")),
         isDefaultForm: false,
         types: .init(primary: .normal),
         baseStats: .init(
