@@ -14,8 +14,10 @@ import Testing
 }
 
 @Test func gen01IncludesSpeciesForms() {
-    #expect(PokemonProfiles.gen01.count == 236)
+    #expect(PokemonProfiles.gen01.count == 238)
     #expect(PokemonProfiles.alolaRaichu.types.secondary == .psychic)
+    #expect(PokemonProfiles.megaXRaichu.stats.attack == 135)
+    #expect(PokemonProfiles.megaYRaichu.stats.specialAttack == 160)
     #expect(PokemonProfiles.galarWeezing.types.primary == .poison)
     #expect(PokemonProfiles.galarWeezing.types.secondary == .fairy)
     #expect(PokemonProfiles.paldeaBlazeBreedTauros.types.secondary == .fire)
@@ -41,32 +43,39 @@ import Testing
 }
 
 @Test func gen04IncludesSpeciesForms() {
-    #expect(PokemonProfiles.gen04.count == 149)
+    #expect(PokemonProfiles.gen04.count == 150)
     #expect(PokemonProfiles.washRotom.types.secondary == .water)
     #expect(PokemonProfiles.originGiratina.form == .origin)
     #expect(PokemonProfiles.skyShaymin.types.secondary == .flying)
     #expect(PokemonProfiles.fireArceus.form == .firePlate)
     #expect(PokemonProfiles.megaLucario.stats.total == 625)
+    #expect(PokemonProfiles.megaStaraptor.abilities.first == .contrary)
 }
 
 @Test func gen05IncludesSpeciesForms() {
-    #expect(PokemonProfiles.gen05.count == 194)
+    #expect(PokemonProfiles.gen05.count == 197)
     #expect(PokemonProfiles.blueStripedBasculin.form == .blueStriped)
     #expect(PokemonProfiles.zenDarmanitan.types.secondary == .psychic)
     #expect(PokemonProfiles.galarZenDarmanitan.types.secondary == .fire)
     #expect(PokemonProfiles.summerDeerling.form == .summer)
+    #expect(PokemonProfiles.megaScolipede.stats.defense == 149)
+    #expect(PokemonProfiles.megaScrafty.abilities.first == .intimidate)
+    #expect(PokemonProfiles.megaEelektross.abilities.first == .eelevate)
     #expect(PokemonProfiles.therianTornadus.abilities.first == .regenerator)
     #expect(PokemonProfiles.whiteKyurem.stats.total == 700)
     #expect(PokemonProfiles.pirouetteMeloetta.types.secondary == .fighting)
 }
 
 @Test func gen06IncludesSpeciesForms() {
-    #expect(PokemonProfiles.gen06.count == 178)
+    #expect(PokemonProfiles.gen06.count == 182)
     #expect(PokemonProfiles.ashGreninja.abilities.first == .battleBond)
     #expect(PokemonProfiles.bladeAegislash.stats.attack == 140)
     #expect(PokemonProfiles.heartFurfrou.form == .heart)
     #expect(PokemonProfiles.superGourgeist.form == .superSize)
     #expect(PokemonProfiles.tenPercentZygarde.form == .form10)
+    #expect(PokemonProfiles.megaPyroar.abilities.first == .fireMane)
+    #expect(PokemonProfiles.megaBarbaracle.types.secondary == .fighting)
+    #expect(PokemonProfiles.megaDragalge.abilities.first == .regenerator)
     #expect(PokemonProfiles.unboundHoopa.types.secondary == .dark)
     #expect(PokemonProfiles.megaDiancie.stats.total == 700)
 }
@@ -83,7 +92,7 @@ import Testing
 }
 
 @Test func gen08IncludesSpeciesForms() {
-    #expect(PokemonProfiles.gen08.count == 196)
+    #expect(PokemonProfiles.gen08.count == 197)
     #expect(PokemonProfiles.crownedZacian.types.secondary == .steel)
     #expect(PokemonProfiles.rapidStrikeUrshifu.types.secondary == .water)
     #expect(PokemonProfiles.singleStrikeGmaxUrshifu.form == .singleStrikeGmax)
@@ -91,6 +100,7 @@ import Testing
     #expect(PokemonProfiles.iceCalyrex.abilities.first == .asOne)
     #expect(PokemonProfiles.shadowCalyrex.stats.specialAttack == 165)
     #expect(PokemonProfiles.bloodmoonUrsaluna.form == .bloodmoon)
+    #expect(PokemonProfiles.megaFalinks.stats.speed == 100)
     #expect(PokemonProfiles.rubyCreamStrawberrySweetAlcremie.form == .rubyCreamStrawberrySweet)
 }
 

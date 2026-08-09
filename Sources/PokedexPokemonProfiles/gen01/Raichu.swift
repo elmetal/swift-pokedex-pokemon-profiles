@@ -41,14 +41,56 @@ enum RaichuProfiles {
         height: .init(decimeters: 7),
         weight: .init(hectograms: 210)
     )
+
+    static let megaXRaichu = PokemonProfile(
+        key: .init(species: .raichu, form: .init(rawValue: "mega-x")),
+        isDefaultForm: false,
+        types: .init(primary: .electric),
+        baseStats: .init(
+            hp: 60,
+            attack: 135,
+            defense: 95,
+            specialAttack: 90,
+            specialDefense: 95,
+            speed: 110
+        ),
+        abilities: .init(
+            first: .electricSurge
+        ),
+        height: .init(decimeters: 12),
+        weight: .init(hectograms: 380)
+    )
+
+    static let megaYRaichu = PokemonProfile(
+        key: .init(species: .raichu, form: .init(rawValue: "mega-y")),
+        isDefaultForm: false,
+        types: .init(primary: .electric),
+        baseStats: .init(
+            hp: 60,
+            attack: 100,
+            defense: 55,
+            specialAttack: 160,
+            specialDefense: 80,
+            speed: 130
+        ),
+        abilities: .init(
+            first: .noGuard
+        ),
+        height: .init(decimeters: 10),
+        weight: .init(hectograms: 260)
+    )
 }
 
 public extension PokemonProfiles {
     static let raichu = RaichuProfiles.raichu
     static let alolaRaichu = RaichuProfiles.alolaRaichu
+    static let megaXRaichu = RaichuProfiles.megaXRaichu
+    static let megaYRaichu = RaichuProfiles.megaYRaichu
 }
 
 public extension PokemonProfile {
     static let raichu = PokemonProfiles.raichu
     static let alolaRaichu = PokemonProfiles.alolaRaichu
+    static let megaXRaichu = PokemonProfiles.megaXRaichu
+    static let megaYRaichu = PokemonProfiles.megaYRaichu
 }

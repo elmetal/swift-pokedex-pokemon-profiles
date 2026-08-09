@@ -14,6 +14,7 @@ enum Gen01PokemonProfiles {
         PokemonProfiles.originalCapPikachu, PokemonProfiles.hoennCapPikachu, PokemonProfiles.sinnohCapPikachu, PokemonProfiles.unovaCapPikachu,
         PokemonProfiles.kalosCapPikachu, PokemonProfiles.alolaCapPikachu, PokemonProfiles.partnerCapPikachu, PokemonProfiles.starterPikachu,
         PokemonProfiles.worldCapPikachu, PokemonProfiles.gmaxPikachu, PokemonProfiles.raichu, PokemonProfiles.alolaRaichu,
+        PokemonProfiles.megaXRaichu, PokemonProfiles.megaYRaichu,
         PokemonProfiles.sandshrew, PokemonProfiles.alolaSandshrew, PokemonProfiles.sandslash, PokemonProfiles.alolaSandslash,
         PokemonProfiles.nidoranFemale, PokemonProfiles.nidorina, PokemonProfiles.nidoqueen, PokemonProfiles.nidoranMale,
         PokemonProfiles.nidorino, PokemonProfiles.nidoking, PokemonProfiles.clefairy, PokemonProfiles.clefable,

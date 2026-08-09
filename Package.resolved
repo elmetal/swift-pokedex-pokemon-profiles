@@ -1,13 +1,13 @@
 {
-  "originHash" : "fdb24d1f3cea1ff50fbfc6bb3337151f8bc6e4de8d1fd11a8949ff67f5a8bc5d",
+  "originHash" : "9a7ef3881373a678b508e97a2073967b6309a4a91a64244b722cc81c562c871a",
   "pins" : [
     {
       "identity" : "swift-pokedex-abilities",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elmetal/swift-pokedex-abilities",
       "state" : {
-        "revision" : "ddc04befe71a6ba498a2ca7df547a459c5e00fff",
-        "version" : "0.0.1"
+        "revision" : "fc716fdec58a39b42827a26ab9233f408cdf650b",
+        "version" : "0.0.3"
       }
     },
     {

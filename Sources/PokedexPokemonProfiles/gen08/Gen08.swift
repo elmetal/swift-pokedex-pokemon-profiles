@@ -36,6 +36,7 @@ enum Gen08PokemonProfiles {
         PokemonProfiles.rainbowSwirlFlowerSweetAlcremie, PokemonProfiles.vanillaCreamRibbonSweetAlcremie, PokemonProfiles.rubyCreamRibbonSweetAlcremie, PokemonProfiles.matchaCreamRibbonSweetAlcremie,
         PokemonProfiles.mintCreamRibbonSweetAlcremie, PokemonProfiles.lemonCreamRibbonSweetAlcremie, PokemonProfiles.saltedCreamRibbonSweetAlcremie, PokemonProfiles.rubySwirlRibbonSweetAlcremie,
         PokemonProfiles.caramelSwirlRibbonSweetAlcremie, PokemonProfiles.rainbowSwirlRibbonSweetAlcremie, PokemonProfiles.gmaxAlcremie, PokemonProfiles.falinks,
+        PokemonProfiles.megaFalinks,
         PokemonProfiles.pincurchin, PokemonProfiles.snom, PokemonProfiles.frosmoth, PokemonProfiles.stonjourner,
         PokemonProfiles.eiscue, PokemonProfiles.noiceEiscue, PokemonProfiles.indeedee, PokemonProfiles.femaleIndeedee,
         PokemonProfiles.morpeko, PokemonProfiles.hangryMorpeko, PokemonProfiles.cufant, PokemonProfiles.copperajah,
