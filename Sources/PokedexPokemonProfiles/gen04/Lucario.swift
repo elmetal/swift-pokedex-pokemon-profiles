@@ -42,14 +42,33 @@ enum LucarioProfiles {
         height: .init(decimeters: 13),
         weight: .init(hectograms: 575)
     )
+
+    static let megaZLucario = PokemonProfile(
+        key: .init(species: .lucario, form: .megaZ),
+        isDefaultForm: false,
+        types: .init(primary: .fighting, secondary: .steel),
+        baseStats: .init(
+            hp: 70,
+            attack: 145,
+            defense: 88,
+            specialAttack: 140,
+            specialDefense: 70,
+            speed: 112
+        ),
+        abilities: .init(first: .auraGuard),
+        height: .init(decimeters: 13),
+        weight: .init(hectograms: 494)
+    )
 }
 
 public extension PokemonProfiles {
     static let lucario = LucarioProfiles.lucario
     static let megaLucario = LucarioProfiles.megaLucario
+    static let megaZLucario = LucarioProfiles.megaZLucario
 }
 
 public extension PokemonProfile {
     static let lucario = PokemonProfiles.lucario
     static let megaLucario = PokemonProfiles.megaLucario
+    static let megaZLucario = PokemonProfiles.megaZLucario
 }

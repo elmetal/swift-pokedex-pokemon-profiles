@@ -23,7 +23,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/elmetal/swift-pokedex-species", from: "0.0.1"),
         .package(url: "https://github.com/elmetal/swift-pokemon-types", from: "0.0.3"),
-        .package(url: "https://github.com/elmetal/swift-pokedex-abilities", from: "0.0.1"),
+        .package(url: "https://github.com/elmetal/swift-pokedex-abilities", from: "0.0.4"),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.

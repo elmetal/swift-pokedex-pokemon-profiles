@@ -227,6 +227,7 @@ public extension PokemonForm {
     static let mega = PokemonForm(rawValue: "mega")
     static let megaX = PokemonForm(rawValue: "mega-x")
     static let megaY = PokemonForm(rawValue: "mega-y")
+    static let megaZ = PokemonForm(rawValue: "mega-z")
     static let midnight = PokemonForm(rawValue: "midnight")
     static let mintCreamBerrySweet = PokemonForm(rawValue: "mint-cream-berry-sweet")
     static let mintCreamCloverSweet = PokemonForm(rawValue: "mint-cream-clover-sweet")
@@ -387,6 +388,7 @@ private let localizedPokemonFormNames: [String: LocalizedPokemonFormName] = [
     "mega": .init(en: "Mega", ja: "メガシンカ"),
     "mega-x": .init(en: "Mega X", ja: "メガシンカX"),
     "mega-y": .init(en: "Mega Y", ja: "メガシンカY"),
+    "mega-z": .init(en: "Mega Z", ja: "メガシンカZ"),
     "gmax": .init(en: "Gigantamax", ja: "キョダイマックス"),
     "primal": .init(en: "Primal", ja: "ゲンシカイキ"),
     "origin": .init(en: "Origin Forme", ja: "オリジンフォルム"),

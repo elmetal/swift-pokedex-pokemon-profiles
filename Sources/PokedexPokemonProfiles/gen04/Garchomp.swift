@@ -41,14 +41,33 @@ enum GarchompProfiles {
         height: .init(decimeters: 19),
         weight: .init(hectograms: 950)
     )
+
+    static let megaZGarchomp = PokemonProfile(
+        key: .init(species: .garchomp, form: .megaZ),
+        isDefaultForm: false,
+        types: .init(primary: .dragon),
+        baseStats: .init(
+            hp: 108,
+            attack: 130,
+            defense: 85,
+            specialAttack: 141,
+            specialDefense: 85,
+            speed: 151
+        ),
+        abilities: .init(first: .levitate),
+        height: .init(decimeters: 19),
+        weight: .init(hectograms: 990)
+    )
 }
 
 public extension PokemonProfiles {
     static let garchomp = GarchompProfiles.garchomp
     static let megaGarchomp = GarchompProfiles.megaGarchomp
+    static let megaZGarchomp = GarchompProfiles.megaZGarchomp
 }
 
 public extension PokemonProfile {
     static let garchomp = PokemonProfiles.garchomp
     static let megaGarchomp = PokemonProfiles.megaGarchomp
+    static let megaZGarchomp = PokemonProfiles.megaZGarchomp
 }
