@@ -42,14 +42,33 @@ enum AbsolProfiles {
         height: .init(decimeters: 12),
         weight: .init(hectograms: 490)
     )
+
+    static let megaZAbsol = PokemonProfile(
+        key: .init(species: .absol, form: .megaZ),
+        isDefaultForm: false,
+        types: .init(primary: .dark, secondary: .ghost),
+        baseStats: .init(
+            hp: 65,
+            attack: 150,
+            defense: 60,
+            specialAttack: 115,
+            specialDefense: 60,
+            speed: 115
+        ),
+        abilities: .init(first: .sharpness),
+        height: .init(decimeters: 12),
+        weight: .init(hectograms: 490)
+    )
 }
 
 public extension PokemonProfiles {
     static let absol = AbsolProfiles.absol
     static let megaAbsol = AbsolProfiles.megaAbsol
+    static let megaZAbsol = AbsolProfiles.megaZAbsol
 }
 
 public extension PokemonProfile {
     static let absol = PokemonProfiles.absol
     static let megaAbsol = PokemonProfiles.megaAbsol
+    static let megaZAbsol = PokemonProfiles.megaZAbsol
 }

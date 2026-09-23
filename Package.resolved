@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/elmetal/swift-pokedex-abilities",
       "state" : {
-        "revision" : "fc716fdec58a39b42827a26ab9233f408cdf650b",
-        "version" : "0.0.3"
+        "revision" : "03ac74ea74de7a4334e92ab08b3fc9c0c1563ee5",
+        "version" : "0.0.4"
       }
     },
     {
